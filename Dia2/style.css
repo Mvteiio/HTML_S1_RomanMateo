@@ -1,0 +1,63 @@
+.hojaVida {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid; /* Cambiamos a grid en lugar de flex */
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas */
+    grid-gap: 20px;
+}
+
+.fotoCara {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+.infoPersonal {
+    border: 2px solid black; 
+    padding: 10px; 
+    border-radius: 10px; 
+    width: fit-content; 
+    text-align: center; 
+    margin-bottom: 10px;
+    grid-column: 1;
+}
+
+
+div[style*="border: 2px solid"] { /* Para el div de información personal */
+    grid-column: 1;
+}
+
+.certificados {
+    border: 2px solid black; 
+    padding: 10px; 
+    border-radius: 10px; 
+    width: fit-content; 
+    margin-bottom: 20px;
+    grid-column: 1; /* Primera columna */
+}
+
+.columnaCentral {
+    grid-column: 2; /* Segunda columna */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-row: 1;
+}
+
+.infoAcademica {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.habilidades {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}

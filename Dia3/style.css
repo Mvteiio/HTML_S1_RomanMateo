@@ -1,0 +1,9 @@
+.fotoCara {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+    object-fit: cover;
+}
