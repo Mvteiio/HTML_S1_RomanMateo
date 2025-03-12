@@ -1,9 +1,91 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+  }
+
+.hojaVida {
+    border: 2px solid black;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('imagenes/fondo.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center;
+}
+
+
 .fotoCara {
     width: 200px;
     border: 2px solid black;
     height: 200px; 
     border-radius: 50%; 
     overflow: hidden; 
+    margin: 10px;
+    object-fit: cover;
+}
+
+.personalProyect {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    overflow: hidden; 
     margin-bottom: 20px;
     object-fit: cover;
+    padding: 10px;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+}
+
+.infoAcademica {
+    border: 2px solid black; 
+    padding: 10px;
+    vertical-align: baseline;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+}
+
+.infoPersonal {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+    object-fit: cover;
+    padding: 10px;
+    vertical-align: baseline;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+}
+
+.habilidades {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+    object-fit: cover;
+    padding: 10px;
+    vertical-align: baseline;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+}
+
+.certificado {
+    width: 200px;
+    border: 2px solid black;
+    height: 200px; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+    object-fit: cover;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
 }
