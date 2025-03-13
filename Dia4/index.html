@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Formulario de registro - Mi web</h1>
+    <form method="post" action="./indux.html" class="formulario" >
+        <input type="text" placeholder="Nombre" name="nombre" maxlength="50" required>
+        <input type="text" placeholder="Apellidos" name="apellidos" maxlength="50" required>
+        <br>
+        <label for="sexo">Escoge tu sexo: </label>
+        <select name="sexo" id="sexo">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <div class="checkbox-grupo">
+            <input type="checkbox" id="notis" name="terminos" checked>
+            <label for="notis">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+        <br>
+        <div class="checkbox-grupoDos">
+            <input type="checkbox" id="terminos" name="terminos" checked>
+            <label for="terminos">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </div>
+        <label for="opciones">De qué ciudad eres:</label>
+        <select id="opciones" name="opciones">
+            <option value="opcion1">Bucaramanga</option>
+            <option value="opcion2">Girón</option>
+            <option value="opcion3">Floridablanca</option>
+            <option value="opcion4">Piedecuesta</option>
+        </select>
+        <br>
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios..."></textarea>
+        <br>
+        <input type="submit">
+        
+    </form>
+</body>
+</html>

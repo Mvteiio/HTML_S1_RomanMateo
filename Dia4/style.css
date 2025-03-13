@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 0 ;
+}
+
+.checkbox-grupo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-grupo input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-grupoDos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-grupoDos input[type="checkbox"] {
+    margin-right: 10px;
+}
