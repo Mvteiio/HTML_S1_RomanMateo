@@ -1,63 +1,58 @@
 .hojaVida {
+    position: relative;
+    width: 900px;
+    height: 1226px;
     border: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    display: grid; /* Cambiamos a grid en lugar de flex */
-    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas */
-    grid-gap: 20px;
 }
 
-.fotoCara {
-    width: 200px;
-    border: 2px solid black;
-    height: 200px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin-bottom: 20px;
+.selfie {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid black;
+    display: flex; /* Activa el modelo flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px;
+
+}
+
+.foto {
+    max-width: 100%; /* Escala la imagen */
+    max-height: 100%;
+    border-radius: 50%; /* Redondea la imagen, opcional */
 }
 
 .infoPersonal {
-    border: 2px solid black; 
-    padding: 10px; 
-    border-radius: 10px; 
-    width: fit-content; 
-    text-align: center; 
-    margin-bottom: 10px;
-    grid-column: 1;
+    width: 280px;
+    height: 580px;
+    top: 312px;
+    left: 6px;
+    position: absolute;
+    border: 1px solid black;
+    padding: 10px;
 }
 
-
-div[style*="border: 2px solid"] { /* Para el div de información personal */
-    grid-column: 1;
-}
-
-.certificados {
-    border: 2px solid black; 
-    padding: 10px; 
-    border-radius: 10px; 
-    width: fit-content; 
-    margin-bottom: 20px;
-    grid-column: 1; /* Primera columna */
-}
-
-.columnaCentral {
-    grid-column: 2; /* Segunda columna */
+.certificado {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 918px;
+    left: 6px;
+    border: 1px solid black;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenCertificado {
+    width: 300px;
+    height: auto;
 }
 
 .infoAcademica {
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    width: fit-content;
-}
-
-.habilidades {
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    width: fit-content;
+    
 }
