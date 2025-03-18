@@ -27,7 +27,6 @@ a {
     color: inherit; /* Mantiene el color del texto original */
 }
 
-
 .tarjetaMetro {
     position: relative;
     width: 1400px;
@@ -75,10 +74,10 @@ a {
 
 .tarjetaMetrolinea {
     position: absolute;
-    width: 884px;
-    height: 497px;
-    top: 122px;
-    left: 127px;
+    width: 576px;
+    height: 324px;
+    top: 103px;
+    left: 359px;
 }
 
 .carrito {
@@ -115,25 +114,8 @@ a {
     font-size: 30;
 }
 
-.metroSaldo {
-    position: absolute;
-    width: 716px;
-    height: 55px;
-    bottom: 80px;
-    left: 58px;
-    font-size: 40;
-}
 
-.dinero {
-    position: absolute;
-    width: 180px;
-    height: 37px;
-    bottom: 39px;
-    left: 58px;
-    font-size: 27;
-}
-
-.comprar {
+.recargar {
     position: absolute;
     width: 111px;
     height: 36px;
@@ -166,20 +148,85 @@ a {
     right: 43.3px;
 }
 
-.cantidad {
+.linea2 {
     position: absolute;
     width: 84px;
-    height: 27px;
-    top: 149px;
-    right: 13px;
-    font-size: 20;
-    color: #FFFFFF;
-}
-
-.linea1 {
-    position: absolute;
-    width: 146px;
     height: 2px;
     top: 102.5px;
-    right: 513.5px;
+    right: 320.75px;
+}
+
+.titularTarjeta {
+    position: absolute;
+    width: 700px;
+    height: 55px;
+    top: 400px;
+    left: 301px;
+    font-size: 40;
+}
+
+.saldoActual {
+    position: absolute;
+    width: 350px;
+    height: 37px;
+    top: 477px;
+    left: 483px;
+    font-size: 27;
+}
+
+.saldoEscogido {
+    position: absolute;
+    width: 200px;
+    height: 37px;
+    top: 544px;
+    left: 539px;
+}
+
+.recuadroDinero {
+    position: absolute;
+    width: 288px;
+    height: 58px;
+    bottom: 125px;    
+    left: 485px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+.dineroConsignar {
+    position: absolute;
+    width: 77px;
+    height: 37px;
+    bottom: 116px;
+    left: 599px;
+    color: #707070;
+}
+
+.valorArriba {
+    position: absolute;
+    width: 57px;
+    height: 27px;
+    right: 26px;
+    top: 307px;
+    font-size: 20;
+    color: #FFFFFF80;
+}
+
+.valorMedio {
+    position: absolute;
+    width: 57px;
+    height: 27px;
+    right: 26px;
+    top: 387px;
+    font-size: 20;
+    color: white
+}
+
+.valorAbajo {
+    position: absolute;
+    width: 57px;
+    height: 27px;
+    right: 26px;
+    top: 467px;
+    font-size: 20;
+    color: #FFFFFF80;
 }
