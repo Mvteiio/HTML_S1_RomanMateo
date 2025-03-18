@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    width: 1920px;
+    height: 1080px;
+    background-image: linear-gradient(#FFFFFF,#E6E6E6, #808080);
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tarjetaMetro {
+    position: relative;
+    width: 1400px;
+    height: 800px;
+    background-color: white;
+    border: 2px solid #707070;
+    place-self: center;
+    }
+
+.barraDerechaNegra {
+    position: absolute;
+    width: 110px;
+    height: 800px;
+    top: 0;
+    right: 0;
+    background-color: #212020;
+    border-left: 2px solid #707070;
+}
+
+.logoMetrolinea {
+    position: absolute;
+    width: 196px;
+    height: 44px;
+    left: 43px;
+    top: 43px;
+}
+
+.cuadroVerde {
+    position: absolute;
+    width: 160px;
+    height: 114px;
+    background-color: #d5ff43;
+    top: 647px;
+    right: 160px;
+    border-radius: 8px;
+}
+
+.logoCuadro {
+    position: absolute;
+    width: 129px;
+    height: 29px;
+    top: 676px;
+    right: 176px;
+}
+
+.tarjetaMetrolinea {
+    position: absolute;
+    width: 884px;
+    height: 497px;
+    top: 122px;
+    left: 127px;
+}
+
+.carrito {
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    top: 51.5px;
+    right: 143.33px;
+}
+
+.search {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 51.75px;
+    right: 249.3px;
+}
