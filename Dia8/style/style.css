@@ -1,0 +1,19 @@
+body {
+    width: 1920px;
+    height: 3600px;
+    margin: 0px;
+}
+
+.cuerpo {
+    width: 1920px;
+    height: 3600px;
+    position: relative;
+    background-color: #110f0f;
+}
+
+.fondo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+}   
