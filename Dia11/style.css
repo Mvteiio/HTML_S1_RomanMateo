@@ -1,3 +1,7 @@
+body {
+    background-color: #0f1223;
+}
+
 .container {
     display: grid;
     border: 1px solid black;
@@ -5,8 +9,11 @@
     grid-template-rows: repeat(3, auto);
     width: 50%;
     height: 100%;
-    gap: 10px   ;
-    padding: 10px;
+    gap: 15px   ;
+    padding: 15px;
+    background-color: black;
+    border-radius: 12px;
+    margin: auto;
 }
 
 .uno {
@@ -15,6 +22,7 @@
     object-fit: cover; /* Cubre todo el contenedor manteniendo la proporción */
     object-position: center; /* Centra la imagen */
     background-color: aqua;
+    border-radius: 12px;
 }
 
 .uno img {
@@ -22,6 +30,8 @@
     height: auto;
     object-fit: cover; /* Cubre todo el contenedor manteniendo la proporción */
     object-position: center;
+    height: 100%;
+    border-radius: 12px;
 }
 
 .dos {
@@ -32,16 +42,20 @@
     height: 100%;
     object-fit: cover; /* Cubre todo el contenedor manteniendo la proporción */
     object-position: center; /* Centra la imagen */
+    border-radius: 12px;
 }
 
 .dos img {
     width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 
 .tres {
     background-color: brown;
     grid-column: 1 / 3; 
     grid-row: 3; 
+    border-radius: 12px;
 }
 
 .tres img {
@@ -49,13 +63,15 @@
     height: auto;
     object-fit: cover; /* Cubre todo el contenedor manteniendo la proporción */
     object-position: center;
-
+    height: 100%;
+    border-radius: 12px;
 }
 
 .cuatro {
     background-color: chocolate;
     grid-column: 2;
     grid-row: 1/3;
+    border-radius: 12px;
 }
 
 .cuatro img {
@@ -63,4 +79,5 @@
     height: 100%;
     object-fit: cover; /* Cubre todo el contenedor manteniendo la proporción */
     object-position: center;
+    border-radius: 12px;
 }
