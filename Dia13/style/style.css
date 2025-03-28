@@ -1,46 +1,145 @@
-
-.escenario{
-    width: 100vh;
-    height: 50vh;
-    border: 1px solid black;
+.container {
     position: relative;
-    margin: auto;
+    border: 1px solid black;
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+}     
+
+.naturaleza {
+    z-index: 1;
 }
 
-.naturaleza{
-    width: 100%;
-    height: 100%;
+.sol {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    width: 15%;
+    top: 5%;
+    right: 15%;
+    animation: solAparicion 1s ease-in-out forwards;
+    animation-delay: 9s;
+    opacity: 50%;
 }
 
-
-@keyframes nubeVoladora {
+@keyframes solAparicion {
     from {
-        right: -100px;
+        opacity: 50%;
     }
 
     to {
-        right: 100%;
+        opacity: 100%;
     }
 }
 
+.contador {
+    position: absolute;
+    color: rgb(49, 49, 49);
+    width: 15%;
+    bottom: 5%;
+    left: 45%;
+    z-index: 2;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    margin: 50px auto;
+}
+
+.contador::after {
+    content: "1";
+    animation: contar 4s steps(4) forwards;
+}
+
+@keyframes contar {
+    0% { content: "1"; opacity: 1; }
+    33% { content: "2"; opacity: 1; }
+    66% { content: "3"; opacity: 1; }
+    90% { content: "Listo"; opacity: 1; }
+    100% { content: ""; opacity: 0; }
+}
+
 .nube {
-    width: 20%;
     position: absolute;
-    animation: nubeVoladora 7s ease-in-out;
+    width: 25%;
+    right: -20%;
+    animation: nubeMovimiento 5s ease-in-out ;
+    animation-delay: 4s;
+    z-index: 3;
 }
 
-@keyframes solAparecer {
-    
+@keyframes nubeMovimiento {
+    0%   { right: -20%; } 
+    40%  { right: 50%; } 
+    80%  { right: 50%; } 
+    100% { right: 100%; } 
 }
 
-
-.sol {
-    width: 20%;
+.lluvia {
     position: absolute;
-    top: 0px;
-    right: 400px;
-    opacity: 50%;
+    width: 10%;
+    top: 20%;
+    right: 56%;
+    animation: lluviaMovimiento 3s ease-out ;
+    animation-delay: 6s;
+    z-index: 2;
+    opacity: 0;
 }
+
+.lluviaExtra {
+    position: absolute;
+    width: 10%;
+    top: 10%;
+    right: 56%;
+    animation: lluviaMovimiento2 4s ease-out ;
+    animation-delay: 6s;
+    z-index: 2;
+    opacity: 0;
+}
+
+@keyframes lluviaMovimiento {
+    from {
+        top: 20%;
+        right: 56%;
+        opacity: 0;
+    }
+
+    to {
+        top: 110%;
+        opacity: 1;
+    }
+}
+
+@keyframes lluviaMovimiento2 {
+    from {
+        top: 10%;
+        right: 56%;
+        opacity: 0;
+    }
+
+    to {
+        top: 120%;
+        opacity: 1;
+    }
+}
+
+.flor {
+    position: absolute;
+    width: 10%;
+    top: 120%;;
+    right: 57%;
+    animation: florAparicion 1s ease-in-out forwards;
+    animation-delay: 10s;
+    z-index: 2;
+}
+
+@keyframes florAparicion {
+    from {
+        top: 120%;
+        right: 57%;
+    }
+
+    to {
+        top: 60%;
+        right: 57%;
+    }
+}
+
